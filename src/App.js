@@ -66,42 +66,7 @@ function App() {
   };
 
   let appContent 
-  //= (
-    // <Box
-    //   xs={12}
-    //   display="flex"
-    //   flexDirection="column"
-    //   alignItems="center"
-    //   justifyContent="center"
-    //   sx={{
-    //     width: '100%',
-    //     minHeight: '500px',
-    //     Left:'2rem',
-    //   }}
-    // >
-    //   <SvgIcon
-    //     component={SplashIcon}
-    //     inheritViewBox
-    //     sx={{ fontSize: { xs: '100px', sm: '120px', md: '140px' } }}
-    //   />
-    //   <Typography
-    //     variant="h4"
-    //     component="h4"
-    //     sx={{
-    //       fontSize: { xs: '12px', sm: '14px' },
-    //       color: 'rgba(255,255,255, .85)',
-    //       fontFamily: 'Poppins',
-    //       textAlign: 'center',
-    //       margin: '2rem 0',
-    //       maxWidth: '80%',
-    //       lineHeight: '22px',
-    //     }}
-    //   >
-    //     Explore current weather data and 6-day forecast of more than 200,000
-    //     cities!
-    //   </Typography>
-    // </Box>
-  //);
+  
 
   if (todayWeather && todayForecast && weekForecast) {
     appContent = (
@@ -159,8 +124,8 @@ function App() {
 
   return (
     <>
-    {/* <Toolbar/> */}
-    <Search onSearchChange={searchChangeHandler}/>
+     <Toolbar onSearchChange={searchChangeHandler}/> 
+    {/* <Search onSearchChange={searchChangeHandler}/> */}
     <Sidebar/>
       <main style={{marginTop:'5.8rem',marginLeft:'8%'}}>
              {/* <Switch> */}

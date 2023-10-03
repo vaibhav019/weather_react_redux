@@ -24,7 +24,7 @@ const Search = ({ onSearchChange }) => {
   };
 
   return (
-    <div clsssName={classes.search_box}>
+    // <div clsssName={classes.search_box}>
     <AsyncPaginate
       placeholder="Search for cities"
       debounceTimeout={600}
@@ -33,7 +33,7 @@ const Search = ({ onSearchChange }) => {
       loadOptions={loadOptions}
       style={{left:'20rem'}}
     />
-    </div>
+    // </div>
   );
 };
 
