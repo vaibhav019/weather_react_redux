@@ -1,0 +1,23 @@
+
+
+.nav_btn_active_cls{
+    color: rgb(15, 134, 238);
+    
+}
+.nav_btn_in_active_cls{
+ 
+    color: black;
+   
+}
+
+
+/* @media  (max-width: 450px) {
+    .nav_btn_active_cls {
+        font-size: 0.7rem;
+    }
+    .nav_btn_in_active_cls{
+        font-size: 0.7rem;
+    }
+  }
+
+   */
