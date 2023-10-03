@@ -28,8 +28,10 @@ function App() {
   const [weekForecast, setWeekForecast] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
-
+  const [city, setCity] = useState('Pune,IN');
   const searchChangeHandler = async (enteredData) => {
+   
+    setCity(enteredData.label)
     const [latitude, longitude] = enteredData.value.split(' ');
 
     setIsLoading(true);
@@ -124,7 +126,7 @@ function App() {
 
   return (
     <>
-     <Toolbar onSearchChange={searchChangeHandler}/> 
+     <Toolbar onSearchChange={searchChangeHandler} city={city}/> 
     {/* <Search onSearchChange={searchChangeHandler}/> */}
     <Sidebar/>
       <main style={{marginTop:'5.8rem',marginLeft:'8%'}}>

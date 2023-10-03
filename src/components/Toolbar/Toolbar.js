@@ -12,10 +12,10 @@ const Toolbar = (props) =>
 	return(
 	<header className={classes.toolbar}>
 		<nav className={classes.toolbar_navigation}>
-			<FaLocationDot fill='#00B4CC' size='15' />{"   "} Pune, India
+			<FaLocationDot fill='#00B4CC' size='15' />{"   "} {props.city}
 			<div className={classes.toolbar_searchBox}>		
       {/* <input type="text" className={classes.search_input}  placeholder="Enter Location..."/> */}
-	  <Search onSearchChange={props.onSearchChange}/>
+	  <Search onSearchChange={props.onSearchChange} city={props.city}/>
       {/* <button type="submit"className={classes.search_btn} >
        <BiSearch/>
      </button>		 */}

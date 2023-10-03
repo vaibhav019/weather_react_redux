@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AsyncPaginate } from 'react-select-async-paginate';
 import { fetchCities } from '../../api/OpenWeatherService';
 import classes from './search.module.scss'
-const Search = ({ onSearchChange }) => {
+const Search = ({ onSearchChange,city }) => {
   const [searchValue, setSearchValue] = useState(null);
 
   const loadOptions = async (inputValue) => {
